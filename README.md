@@ -12,7 +12,6 @@ This repository is a monorepo containing all components of the Serenity VR syste
 - 📁 **[`serenity-vr/`](./serenity-vr/)** - Unity project containing adaptive therapeutic VR scenes (Meta Quest).
 
 ## Architecture Overview
-*(See `Docs/` for full details)*
 1. Patient wears the MAX30102 sensor connected to an ESP32.
 2. ESP32 transmits SpO2 and Heart Rate data via MQTT to the Spring Boot backend.
 3. The backend consults a local Llama 3 AI model for real-time therapeutic adaptations.
