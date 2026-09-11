@@ -1,11 +1,6 @@
 # Serenity VR 🧘‍♂️🥽
 
-> An AI-driven, biofeedback-adapted Virtual Reality therapy system for anxiety management.
-
 **Short Description for GitHub:** A closed-loop VR therapy platform that uses real-time SpO2 and heart rate data (MAX30102 + ESP32) to dynamically adapt Unity VR scenes via a local AI agent (Ollama) and Spring Boot backend.
-
-## Recommended GitHub Tags
-`virtual-reality`, `biofeedback`, `anxiety-therapy`, `esp32`, `max30102`, `spring-boot`, `react`, `unity3d`, `ollama`, `local-ai`, `health-tech`
 
 ## Project Structure
 
