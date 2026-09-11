@@ -10,7 +10,6 @@ This repository is a monorepo containing all components of the Serenity VR syste
 - 📁 **[`serenity-dashboard/`](./serenity-dashboard/)** - React clinician dashboard for live biometric monitoring.
 - 📁 **[`serenity-hardware/`](./serenity-hardware/)** - ESP32 firmware (C++) for reading MAX30102 sensor data and publishing via MQTT.
 - 📁 **[`serenity-vr/`](./serenity-vr/)** - Unity project containing adaptive therapeutic VR scenes (Meta Quest).
-- 📁 **[`Docs/`](./Docs/)** - Documentation, system architecture, systems mapping (Iceberg/CLD), and feasibility studies.
 
 ## Architecture Overview
 *(See `Docs/` for full details)*
