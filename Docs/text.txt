@@ -1,0 +1,577 @@
+Workbook Overview & Guidelines 
+Problem Solving in Engineering workbook 
+This workbook is a structured guide for students to follow as part of Problem Solving in 
+Engineering (PSE) – IP-3 Experiential Learning Course 
+Follow the modules outlined in this workbook, you will adopt and practice systems thinking 
+methodologies to solve real-world problems in a systemic manner.  
+Until now, you spotted a problem or a gap, you thought of an idea and you developed a 
+prototype. The downside of this rushed problem solving is that the root cause of the problem 
+is not addressed and hence the problem can recur or newer problems can appear. Metaphor 
+recall – 10-headed snake. 
+Through this course we want you to choose a system to fix instead of a problem. 
+You will learn and apply Systems Thinking methods to formulate the problem and develop 
+resilient, robust and sustainable solutions. 
+How to Use This Workbook 
+• Collaborative Teams: Work in mixed-disciplinary teams of 3-5 team members. 
+• Active Writing: Use the fillable workspace to document your team's discussions, 
+data, models, design and new system design architecture. 
+• Technology Agnostic Philosophy: The work book is generic and not bound to a 
+disciplinary domain. It will guide you with methods and tools. You are expected to 
+build your system awareness and expand your understanding by referring to links at 
+the end of each module and apply them to your specific case. 
+• Iterative Progression: You will begin with Module 1, but the progress is not intended 
+to be linear from module 1 to 6. It is recommended that you move back and forth from 
+Module 1 to 4 as per your research and investigation. The best results will come if you 
+do not remain stuck in a module. Keep the momentum alive and progress to 
+subsequent modules while keeping an option open to come back and work on previous 
+modules. 
+• Process over Product: In your first iteration of the workbook, you will develop the 
+abilities to think in systems. Your solution may not be the best fix. The goal is to learn 
+how to adopt systems thinking and rapid prototyping, not to create a flawless product. 
+Continue the journey of PSE and you will be able to propose better system fixes in 
+your next round of iterations. You can start with a fresh workbook. 
+Gen AI Usage Guidelines 
+• Establish context: Introduce yourself with your role in the project, project objectives 
+and expectations and limitations that warrant use of AI 
+• AI Roleplay: Define what role will AI play in this partnership, e.g. 
+Assistant/Critique/Writer/Advisor/Peer-Reviewer/Subject Matter Expert of [ ] 
+• Set Scope: Specify AI deliverables and expectations clearly, some examples; 
+◦ Cite sources 
+◦ Exclude opinions not backed by strong evidence 
+◦ Restrict all references to count of [ ] citations or published journals 
+◦ Support information with reasoning 
+◦ Provide data but do not analyse and draw conclusions 
+Problem Solving in Engineering workbook 
+◦ Skip ice-breaking sentences and do not bring social human-like flavour to the 
+responses 
+◦ Provide contradicting perspectives as an unbiased observer 
+◦ Question my assumptions and ask for my reasons to my claims 
+Affected System (Problem Area) Selection 
+Identify a problem area or affected system that you would like to take up as your project 
+in PSE (IP-3).  
+Select a Super System 
+For example: Transportation& Sustainable Mobility System 
+Select a Specific Sub System (Problem Area) to focus on: 
+For example: TGSRTC – Telangana State Road Transport System –  
+Specific Location: Hyderabad. 
+Specific Issue – Protests 
+Specific Focus – Driver and Conductor 
+Problem Area if identified (Describe the local pain point in 2-3 sentences): 
+For example: TGSRTC Driver and Conductor Health Condition - TGSRTC has faced 
+protests over long working shifts (12-15 hours) of the drivers and conductors and the 
+impact on their physical and mental health. 
+Problem Solving in Engineering workbook 
+Module 1: Drafting the Project Informatics Document (PID) 
+Scoping Real-World Challenges and Building the Project Informatics Document 
+Module Targets/Outcome 
+• Scope a specific, localized problem within India (for e.g., Hyderabad IT corridor, rural 
+Telangana). 
+• Formulate a Project Informatics Document (PID) establishing system boundaries, 
+stakeholders, and physical interfaces/data baselines. 
+Study the System where the problem is observed 
+Describe what is happening in the System. Use 5W2H suggested below to guide your 
+inquiry. 
+Please Note: This is an As-Is State representation and should NOT be mixed with the 
+“should be” state.  
+Collect all the background data about the problem area from official sources. (e.g., citing 
+reports from NITI Aayog, MoHUA, or local municipal bodies), web based links, news 
+articles, research papers, reviews, stakeholder interviews etc. 
+The data or information is inadmissible if the sources are not cited 
+All the claims must be backed with evidence. No evidence, No Claim 
+At the end, your PID must have a statistical base and facts and figures. 
+Keep in mind: 
+● Are the sources official, recognised and citable? 
+● Is every claim backed by facts and figures? 
+● Is there enough measurable/quantified content to draw conclusions? 
+● If there are multiple sources citing conflicting claims, which ones would you refer 
+to and what conclusions would you draw from the conflict? 
+● What are the associated assumptions? 
+● What variables influence the observed claims? What changes when the 
+variables change and is there enough evidence to this? 
+Important Note: Keep your choice of technology area out of the context at the time of 
+drafting PID. The focus is on the Problem area and evolving a deeper understanding 
+of the system in which the problem exists. Do NOT investigate with a pre-conditioned 
+mindset that you know the problem. Capture Symptoms and the context around the 
+symptoms but do not associate it with an assumption which cannot be validated with 
+data. You do NOT know the real problem yet. 
+5W2H Strategy relevant for PID 
+Problem Solving in Engineering workbook 
+WHAT is/are the SYMPTOMs (Effect) of the problem observed?  
+WHO is affected most by the problem? (Stakeholder group 1) (List all) 
+WHO is Causing the Problem? (List all if applicable) (Stakeholder Group 2) 
+WHEN (Time patterns) is the Symptom happening? (Should contrast with the times when 
+the symptoms are not occurring) 
+WHERE (Space context) is/are the symptoms observed? (Should eliminate the locations 
+where the problem does not occur) 
+HOW is the process cycle observed? (How does the information or data move from one 
+state to another?) (Draw a life cycle diagram or a flow chart) 
+HOW MUCH is the impact? Each claim above must be backed by the data/statistics. 
+Provide count and cost. 
+Instructions: 
+Use this space to record all relevant observations, facts, statistics, stakeholder inputs, reports, 
+research findings, and other supporting information related to the selected problem area. 
+Focus on collecting information rather than analysing it or proposing solutions.  
+Additional sheets may be attached if more space is required. 
+Write the Problem Statement (preliminary) 
+Problem Solving in Engineering workbook 
+State the Problem in less than 100 words. This is your current understanding of the 
+problems observed in the System. In case of multiple problems observed, mention as 
+many as you have observed. 
+● Are these problems related to each other? 
+● What is the Causal relationship between the problems? 
+● Which one problem do you observe to be the cause of other problems if they 
+are found related? 
+● Is there an obvious vicious loop (feedback loop) that causes the problems to 
+compound? 
+Define the System 
+Problem Solving in Engineering workbook 
+List all the components of the System. Each component is defined by its function.  
+For example; a part could be the role a person plays and not the name of the person 
+itself. A Part could be a Smartphone User Interface, Installed Applications, Camera, 
+Phone User, Retail shop, Price, Model etc. 
+After you have listed all components that you can think of, connect components to 
+each other to indicate the relationships between the components and form a System 
+map. The connectors could be one-way or two-way arrows suggesting how the 
+components interact with each other. For better understanding the relationship can be 
+written on the connector. 
+Watch the Video “Understanding Systems” on Youtube with link provided at the 
+end of the module 
+Example: System Map of a Drug Manufacturing supply chain. 
+Define the System Boundary (Scope) 
+Problem Solving in Engineering workbook 
+The system boundary defines what is included within the scope of your study and 
+what remains outside it (the environment). The inputs drive the function of the system. 
+The output from the system can be classified as desirable and not-so-desirable (waste) 
+output. 
+Example given: System Map of a Drug Manufacturing Supply Chain System where the 
+problem area focus is on supply chain from manufacturing to retail encircled within 
+the system boundary depicted as dashed. 
+Inputs are identified as green arrows entering into the scope of your system from the 
+environment and outputs are identified as red arrows leaving the environment. 
+Note: The dotted boundary will be the scope of the System which you will be working 
+on. 
+(The scope of your system can be modified later to change the sub systems you     
+intend to work upon.) 
+Stakeholder Map 
+Problem Solving in Engineering workbook 
+Primary Stakeholder Map: List at least three distinct stakeholder groups and their 
+primary needs. 
+For Example: 
+Stakeholder: Paddy Farmers  
+Need: Android mobile camera interface, localized voice-over output [Cite Source]. 
+Note: If your project involves more than three stakeholder groups, you can always add 
+additional entries. 
+1 Stakeholder:  
+Needs:  
+2 Stakeholder: 
+Needs:  
+3 Stakeholder:  
+Needs:  
+Feel free to include more key stakeholders and their needs. Sometimes the stakeholders are 
+not directly visible but they are critical to the system because they influence the system from 
+far. 
+Problem Solving in Engineering workbook 
+Quantitative Baseline Data: State at least two localized statistics or data points 
+relevant to your problem from your PID. Cite sources. 
+For example:  
+Data Point: Mobile internet penetration in rural Telangana has crossed 68%, but 
+network bandwidth in fields remains highly unstable (averaging less than 1.5 Mbps 
+upload speeds in interior fields), making heavy cloud-based AI models completely 
+unviable for real-time field diagnosis [Cite Source] 
+1 Data Point A: e.g. Average daily traffic volume at the selected intersection is 
+18,500 vehicles per day, with peak-hour congestion occurring between 8:00 AM 
+and 10:00 AM. 
+Source:  
+2 Data Point B: for example the average waiting time at the traffic signal during 
+peak hours is 4.8 minutes, leading to increased fuel consumption and delays. 
+Source:  
+Feel free to include more key data points. The data points help us to measure the success or 
+impact of your suggested solutions by comparing “before” vs. “after”. Choose data points 
+carefully because they must represent the real problem and you will ideate to improve these 
+figures. 
+Problem Solving in Engineering workbook 
+State “How Might We…” 
+Write three "How Might We" (HMW) statements that define the transition from the 
+existing system to the desired system. Each statement should highlight the problem 
+your project addresses and the improvement you want to achieve. 
+How might we move from (existing system or challenge) to a system that (achieves 
+the desired outcome)? 
+For example: How might we compress a deep-learning crop disease classification 
+model to run efficiently on low-cost Android smartphones with limited RAM and 
+processing power? 
+1 How Might We 
+2 How Might We 
+3 How Might We 
+Module 1 Resources & Reading Links/Video Links 
+Problem Solving in Engineering workbook 
+• Thinking in Systems – Donella Meadows 
+• The Waters Center for Systems Thinking: waterscenterst.org 
+• Understanding Systems: https://www.youtube.com/watch?v=DVoy02xd2Mg 
+Video Chapters: 
+○ Complexity (00:00) 
+○ Hidden Patterns (02:17) 
+○ Wicked Problems (06:37) 
+○ Understanding the System (09:28) 
+○ Systems Thinking (17:37) 
+○ Zoom In & Zoom Out (27:48) 
+○ Long-Term Impact (28:50) 
+○ Feedback Loops (33:01) 
+○ Interdisciplinary Collaboration (34:52) 
+○ Applying Systems Thinking (35:44) 
+○ Modeling (Trends) (36:58) 
+○ Leverage Points (39:33) 
+Problem Solving in Engineering workbook 
+
+============================================================================================
+
+Module 2: Systems Mapping & Root Cause 
+Dissecting Problems using the Iceberg Model and Stakeholder Ecosystems 
+Module Targets/Outcome 
+• Understand the problem better from the view of stakeholders and process flows. 
+• Apply the Iceberg Model approach to find the root cause of the problem. 
+• Differentiate between symptoms and real root causes of the problem. 
+Diving deep into the Root Cause Discovery (Iceberg Model). 
+Iceberg Model helps you to understand the problem at the root cause. This tool forces your 
+team to look beyond the concern or symptoms that are visible at the surface (Event) to see 
+the hidden patterns, recurrences and trends.  
+These trends (patterns) are a caused by the underlying code, databases, policies, 
+environmental patterns, systemic structures or design limits (e.g., infrastructural, spatial, or 
+physical limits) (Structures). Structure is how the various parts are organized and arranged 
+in the system and how this organization of parts is causing the pattern of events to occur. 
+At the root of structures are user habits, cultural or design beliefs (Mental Models) that 
+determine how structures are organized and why the system is the way it is. 
+In Summary, Mental models define Structure, and Structure drives the behavior of the system. 
+Zoom in to Your Scope Area 
+Focus only on the part of the system that is within your project scope. 
+Identify all the visible events, issues, or situations related to your chosen problem. These 
+may be: 
+● The main problem itself. 
+● Events that happen just before the problem occurs (triggers). 
+● Events that happen as a result of the problem (effects). 
+● Other visible issues that are directly or indirectly connected to it. These visible 
+events/issues can sometimes happen in different time or space but may have a possible 
+connection to the main problem. The connection may not be so obvious but should be 
+considered in the scope of investigation. For example; rising cases of lung cancer in 
+Delhi do not appear to be linked to frequent gas leakage in air conditioners every 
+summer, but they are both interconnected events due to the polluting gases in the 
+atmosphere in the region. 
+Note: At this stage, do not try to explain why these events happen. Simply observe and list 
+what you can see happening in the system. 
+Problem Solving in Engineering workbook 
+Example: 
+If the selected problem is "Traffic congestion near a college gate", related visible events 
+may include: 
+● Long vehicle queues during college hours. 
+Identify Events & Patterns: 
+Look at the events you have identified. 
+Some of these events may happen only once, while others occur repeatedly over time. Your 
+task is to identify these recurring events or behavior and group them into patterns. 
+Look for similarities between the events and ask yourself: 
+● Which events happen repeatedly? 
+● When do they usually occur? 
+● Under what conditions do they occur? 
+● Is there an? 
+Note: At this stage, you are still observing the system. Do not explain why these patterns 
+occur yet. The underlying reasons will be explored in the next step. 
+Example: 
+If the events include: 
+● Long vehicle queues during college hours. 
+The patterns may include: 
+● Traffic congestion occurs almost every weekday during college start and end times. 
+● The traffic congestion peaks during the start of the semester. It subsides during the 
+summer break and holidays. 
+Problem Solving in Engineering workbook 
+Problem Solving in Engineering workbook 
+Stakeholder group identified from Module 1 
+Your system is influenced by more than just its users. Select 3 key stakeholders  
+Start by identifying everyone who interacts with, supports, influences, or is affected by your 
+system. Consider different stakeholder groups such as customers, manufacturers, suppliers, 
+partners, service providers, government agencies, and others relevant to your project. 
+Once identified: 
+● Gather their views through interviews or discussions. 
+● Identify what matters most to each stakeholder. 
+● Note their needs, concerns, and expectations. 
+● Identify what is negotiable and what is not. 
+Assign each member of the team, the role of one stakeholder each. Think from that 
+stakeholder's perspective and summarize their needs, concerns, priorities, and expectations. 
+Note: AI can help you identify additional stakeholders or summarize common viewpoints, but 
+always validate the information using your own understanding and research. 
+Map the Process & Lifecycle from the perspective of each stakeholder 
+Arrange the recurring patterns into a simple step-by-step sequence. This helps you understand 
+how the problem unfolds over time. 
+Once the process is complete, identify the lifecycle by describing how long or how often the 
+process continues. 
+Note: Focus on describing the sequence of events. The reasons behind this process will be 
+explored in the next step. 
+Example: 
+Stakeholder Group 1: Students on Bike 
+Students Bikes arrive near University Gate – bike stops near the gate and pillion rider gets 
+off the bike – bike rider looks for a space by the side of the road to park the bike under the 
+shade of the tree. If the road side is occupied, the biker goes to the ground to park. The entry 
+to the ground is right opposite the University Gate 2. At the same time several buses and 
+private cars are entering the gate 2 from the same median. As soon as the space is available 
+the biker turns on the ground and parks the bike. The biker then crosses the road to enter the 
+University Gate 2. 
+Stakeholder Group 2: Private Car Drivers 
+Private cars arrive near University Gate – the cars have permission to enter the university 
+through gate 2 which is right opposite the entry to the open ground designated as bike 
+parking space. At the same time several students on bike are turning on to the parking 
+grounds from the same median. Each bike has 3 or 4 students riding on it. As soon as the 
+space is available the cars turn inside the gate 2. The cars have to wait for the pedestrian 
+students and bikes to give space for them to turn 
+Stakeholder Group 3: University Security Guards 
+Problem Solving in Engineering workbook 
+The security guards have a duty every morning to keep the traffic moving and not hold the 
+other commuters at all times. 
+Pattern 
+● Traffic congestion occurs every morning before classes begin. 
+Process 
+● Many vehicles arrive at the same time. 
+● Traffic congestion develops. 
+Lifecycle 
+● This sequence repeats every weekday during college hours 
+Identify the System Structure 
+Your process didn't happen by itself. 
+Something in the system allowed each step to happen. 
+Go through your process one step at a time and identify the parts of the system involved. 
+Don't limit yourself to physical objects—rules, technology, infrastructure and environmental 
+conditions are also part of the structure. 
+Example: 
+Process 
+● Vehicles arrive. 
+● Traffic builds up. 
+Structures 
+● Road width, capacity and condition 
+● Entry and exit points on the road and the space between them 
+● Number of entry and exits on the road  
+● Number of buildings on the road side requiring access  
+● The pavement, it’s width and its condition 
+● The habits of people using the road 
+● Traffic signal. 
+● Different kinds of vehicles etc…  
+Explore Mental Models 
+Problem Solving in Engineering workbook 
+Every stakeholder views the system differently. 
+After gaining clarity on the stakeholders’ views. Instead of explaining your own opinion, 
+explain what your stakeholder would believe, expect, and value. 
+Once each team member has completed this activity, discuss the different viewpoints and 
+identify: 
+● Common expectations. 
+● Conflicting priorities. 
+● Shared assumptions. 
+These insights will help you better understand why the system behaves the way it does. 
+Example: 
+Student on Foot 
+Student on Bike 
+Drivers in Car 
+Events/Patterns    
+Structure    
+Mental Model    
+Stakeholder: Security Guard 
+● Wants traffic to keep moving. 
+● Prefers students to follow traffic rules. 
+Stakeholder: Students on motorcycles 
+● Wants to manoeuvre through the traffic freely and safely. 
+● Don’t want cars to block them on roads. 
+Stakeholder: Students arriving in cars. 
+● Wants to arrive at college avoiding minor accidents. 
+● Don’t want motorcyclists to overtake them in peak hours. 
+Note: Don't limit your analysis to a single type of stakeholder. Consider at least three 
+different stakeholder groups from different parts of the system (such as users, manufacturers, 
+suppliers, regulators, service providers, or partners) to gain a broader understanding of the 
+problem. 
+Problem Solving in Engineering workbook 
+Review Your Project: 
+1. 
+2. 
+3. 
+Key Data bottlenecks identified. 
+Key Process bottleneck identified 
+Key Human bottleneck identified 
+Reviewing your “How Might we…” statement from Module 1. 
+How does your proposed HMW fix the bottlenecks? 
+For Example: How does your proposed simulation help find the optimal balance between 
+these variables/ How does your proposed hardware design protect against these 
+physical/electrical limits/ How does your proposed software 
+Bridge these broken links? 
+Which bottlenecks can be fixed with your HMW? 
+Complete the System Map 
+Developing a System Map is an iterative process. 
+At this stage, you may want to revisit your system map from module 1 and revise the system 
+map with the new information discovered in Module 2. This will complete your System Map 
+Module 2 Resources & Reading Links 
+Problem Solving in Engineering workbook 
+• Open The Waters Center for Systems Thinking: waterscenterst.org — Interactive 
+guides and templates for the Iceberg Model and systems mapping 
+• Miro Online Templates: miro.com — Free digital whiteboard templates for Iceberg 
+Model and Ecosystem mapping 
+
+===============================================================================
+
+Module 3: Causal Loop Diagrams & Leverage 
+Module Targets/Outcome 
+·        
+·        
+·        
+Understand the core components of Causal Loop Diagrams (CLDs): variables, 
+links, polarities (+/-), and feedback loops. 
+Construct a localized CLD for a software-heavy engineering system. 
+Apply Senge’s System Archetypes to identify strategic leverage points for 
+digital/physical/embedded/ parametric or structural intervention. 
+Causal Loop Diagram: 
+A causal loop diagram is a simple visual representation of how different things in a system 
+affect each other. Each factor is connected to another by an arrow, and the arrow tells you 
+whether an increase in one causes an increase or a decrease in the other. These effects will 
+eventually influence around the original factor again either positively or negatively. This 
+forms a loop of factors that cause new factors that affect old one. 
+Components of a Causal Loop: 
+1.     Variables (nodes): Anything that can go up or down — population, temperature, 
+sales, stress, workload, interest rate, etc. Every branch has its own examples. 
+2.     Arrows (links): Show cause and effect. An arrow from A to B means "A affects 
+B." 
+3. Polarity (+/–): 
+·    "+" means they move in the same direction (Increase in A → Increase in B) 
+·    "–" means they move in opposite directions (Increase in A → Decrease in B) 
+4. Loops: When arrows form a closed cycle, you get a feedback loop: 
+·    Reinforcing (R): Keeps amplifying change 
+Ex: Social Media virality : More views → more shares → even more views 
+·    Balancing (B): Keeps correcting change 
+Ex: Supply and demand : Prices rise → demand drops → prices come back down 
+Problem Solving in Engineering workbook 
+Identifying Feedback Loops 
+Identify at least one Reinforcing Loop (R) and one Balancing Loop (B) within your 
+system. Then, pinpoint exactly where your HMW (How Might We) statement will 
+intervene — this point is called the leverage point. 
+Steps to identify your loops: 
+1.     Find the Reinforcing Loop (R): Look for a chain of causes that keeps 
+pushing the problem in the same direction — making it grow, worsen, or repeat 
+without stopping on its own. 
+2.     Find the Balancing Loop (B): Look for a chain of causes that tries to correct 
+or stabilize the problem — but may currently be too weak, slow, or missing 
+entirely. 
+3.     Locate the leverage point: Identify the single spot in the loop where a small, 
+well-placed change could shift the entire system's behaviour — this is where 
+your solution (HMW) should act. 
+Leverage Points: 
+A leverage point is a place within a system where a small change can create a large shift in the 
+system's overall behavior. 
+Steps to map leverage points on an already-drawn causal loop diagram: 
+Problem Solving in Engineering workbook 
+1. Study the existing loops — Go through the diagram and clearly label each loop as 
+Reinforcing (R) or Balancing (B). 
+2. Trace the problem's path — Follow the arrows to see exactly which loop(s) are 
+driving the core problem you're trying to solve. 
+3. Examine each variable/link — For every node and connection in the relevant 
+loop(s), ask: "What happens if I change this?" 
+4. Check for weak or missing balancing loops — See if a Balancing loop is too weak, 
+slow, or absent — this is often a strong leverage point. 
+5. Check for unchecked reinforcing loops — See if a Reinforcing loop is running 
+unchecked — intervening here can stop the problem from escalating. 
+6. Select the highest-impact, most feasible point — Pick the one where a realistic, 
+small change is likely to shift the system's overall behavior the most. 
+7. Mark it on the diagram — Clearly highlight/label the chosen leverage point directly 
+on the causal loop diagram for reference. 
+Matching the System Archetype: 
+(Note: A system archetype match means finding the pattern that behaves most like your 
+problem. Look at how your problem changes over time — growing, stalling, repeating, or 
+worsening — and compare it to each archetype's loop pattern. Pick the one that matches 
+your problem's actual behaviour, not just how it looks on the surface.) 
+1.     Which archetype best describes your system problem? 
+2.     Why does this archetype fit your problem? 
+SYSTEM ARCHETYPE REFERENCES 
+Archetype 1: Fixes that Fail 
+A QUICK FIX gives more power to the 
+unintended consequences and the cycle 
+continues. 
+Example: The Cobra Story from 1800s. The 
+Britishers were struggling to invade the central 
+regions of Indian continent due to their inability 
+to deal with Cobras. They announced a sum of 
+money to the locals who would capture and kill 
+Cobras. The fix worked and the cobra 
+population reduced for some time, only until the 
+locals started breeding cobras to make more 
+money and the cobra population increased 
+again. 
+Archetype 2: Limits to Growth 
+Problem Solving in Engineering workbook 
+The limits to growth structure is based on the basic growth structure. And, as should be 
+obvious, nothing grows forever as growth requires resources. Those required resources 
+become a limits to growth 
+Example: People Express airlines is one of the best-known casualties of the “Limits to 
+Success” archetype (see “‘Flying’ People Express Again,” November, 1990). Its tremendous 
+growth was fueled by a rapid expansion of fleet and mutes along with unheard of low airfares. 
+As the fleet capacity grew, People Express was able to carry more passengers and boost 
+revenues, allowing it to expand fleet capacity even more (loop R3). The quality of its service 
+was initially very good, so the positive experience of many fliers increased word-of-mouth 
+advertising and the number of passengers. 
+The Dieting Bind 
+The “engine of growth” at People Express was seen as physical capacity — expanding fleet 
+size, employees and routes. But its “limit to success” was service capacity — the ability to 
+invest time and money in training its employees — which became more difficult to sustain as 
+the company grew (loop R4). 
+The number of passengers flown eventually outstripped the airline’s capacity to provide good 
+service. As a result, quality suffered and it began losing passengers (loop B3). When 
+competitors began matching low rates on selected routes, People Express’ market 
+competitiveness suffered even more. Focusing only on the reinforcing side of the structure 
+turned rapid growth into a tailspin, contributing to the airline’s demise. 
+Simply hiring more employees was not the answer to People Express’ service capacity 
+problems. Similar to the dieter’s reliance on intense exercise, it only masked the real need for 
+the steady long-term commitment to hire and train the necessary people to bring service 
+quality up to a high and sustainable level. 
+Archetype 3: Shifting the Burden 
+A shifting the burden structure occurs 
+when there are different ways to address a 
+situation. With one approach being easier, 
+faster, and requiring fewer resources, 
+which do you think gets pursued? The 
+problem is that taking the easier path 
+ensures one will have to take the easier 
+Problem Solving in Engineering workbook 
+path repeatedly, and makes it harder to pursue the long-term better solution. 
+Example: When you feel tired and take coffee or mid-afternoon caffeine to boost your energy. 
+This results in more fatigue sooner. Another round of caffeine can help momentarily but the 
+fatigue builds up, eventually reducing the amount of work you can do for the same amount of 
+caffeine boost. 
+Archetype 4: Success to the 
+Successful 
+Success to the successful 
+archetype represents two 
+reinforcing structures which 
+may be in a delicate balance 
+though as soon as one gains 
+a small advantage the 
+resource allocation favors 
+the more successful and the 
+result is then rapidly 
+skewed in the direction of the more successful. 
+Example: Think of the Monopoly Board Game where the player with more resources is able 
+to extract more from others. Rich people keep getting richer while the poor gets poorer when 
+rich people have more access and means to pull more resources for themselves leaving less 
+for others. 
+Archetype 5: Tragedy of the Commons 
+A Tragedy of the Commons situation 
+exists whenever two or more activities, 
+each, which in order to produce results, 
+rely on a shared limited resource. 
+Results for these activities continue to 
+develop as long as their use of the 
+limited resource doesn't exceed the 
+resource limit. Once this limit is 
+reached the results produced by each 
+activity are limited to the level at 
+which the resource is replenished 
+Example: When everybody takes the 
+long detour to avoid traffic congestion, 
+thinking no one will take that detour, 
+ever heard of that? 
+And then the long detour becomes 
+congested too. 
+Module 3 Resources & Reading Links 
+Problem Solving in Engineering workbook 
+•        Insight Maker: insightmaker.com — Free, open-source, browser-based tool for 
+drawing CLDs and running system dynamics simulations. 
+•        Loopy: ncase.me/loopy — An excellent, interactive open-source tool for creating 
+thinking-in-systems simulations. 
+•        Senge's System Archetypes Reference: https://insightmaker.com/tag/systemswiki 
+— Quick-reference guide for common system archetypes and their leverage points. 

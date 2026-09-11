@@ -1,0 +1,296 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, fit, backgrounds, calc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\title{\textbf{Problem Solving in Engineering (IP-3)}\\\Large Filled Workbook: Serenity VR}
+\author{Module 1, 2, and 3}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Module 1: Drafting the Project Informatics Document (PID)}
+
+\subsection{System Selection}
+\textbf{Super System:} Healthcare \& Mental Wellness System\\
+\textbf{Sub System (Problem Area):} Anxiety Disorder Management \& Therapy Delivery System\\
+\textbf{Specific Location:} Urban India (Hyderabad / Metropolitan cities)\\
+\textbf{Specific Issue:} Inaccessible, non-adaptive, and delayed anxiety treatment\\
+\textbf{Specific Focus:} Patients with anxiety disorders lacking access to timely, personalized, biofeedback-driven therapy.
+
+\subsection{Problem Area Description}
+India has approximately 38 million people living with anxiety disorders, yet 85--90\% do not receive adequate treatment due to a severe shortage of mental health professionals (only $\sim$0.3 psychiatrists per 100,000 population vs. the WHO-recommended 3 per 100,000). Existing therapy methods are expensive, require frequent in-person clinic visits, offer no real-time physiological feedback, and cannot dynamically adapt to a patient's momentary stress levels. This results in delayed intervention, poor treatment adherence, and compounding anxiety---particularly among urban youth and working professionals who face high-stress environments but lack affordable, technology-driven support systems.
+
+\subsection{Study the System (PID - 5W2H Framework)}
+
+\textbf{WHAT is the SYMPTOM?}
+\begin{itemize}
+    \item \textbf{Massive treatment gap:} 85--90\% of individuals with mental health conditions in India do not receive the care they need [Source: Mental Health Foundation of India; PIB].
+    \item \textbf{Rising anxiety prevalence:} Anxiety disorders in India have increased by over 120\% between 1990 and 2023 [Source: CMHLP; GBD Study].
+    \item \textbf{Non-adaptive therapy:} Current protocols follow fixed schedules without real-time physiological adaptation.
+\end{itemize}
+
+\textbf{WHO is affected most? (Stakeholder Group 1)}
+\begin{itemize}
+    \item Patients with anxiety disorders (particularly urban youth, 18--35).
+    \item Women and adolescents, who experience a disproportionately higher burden.
+\end{itemize}
+
+\textbf{WHO is Causing the Problem? (Stakeholder Group 2)}
+\begin{itemize}
+    \item Systemic shortage of professionals ($\sim$0.3 psychiatrists per 100,000).
+    \item Healthcare policy gaps and underfunded infrastructure.
+    \item Technology gap in therapy delivery methods.
+\end{itemize}
+
+\textbf{WHEN is the Symptom happening?}
+\begin{itemize}
+    \item Chronic and ongoing, peaking during high-stress periods (exams, work deadlines).
+    \item Daily triggers during morning commutes and late-night screen time.
+\end{itemize}
+
+\textbf{WHERE are the symptoms observed?}
+\begin{itemize}
+    \item Urban metropolitan areas, educational institutions, and workplaces (IT corridors).
+\end{itemize}
+
+\textbf{HOW is the process cycle observed?}
+See Section \ref{sec:process_flow} for the visual Process Flow Diagram. The current system is reactive, non-adaptive, and disconnected between sessions.
+
+\textbf{HOW MUCH is the impact?}
+\begin{itemize}
+    \item \textbf{People with anxiety disorders in India:} $\sim$38 million.
+    \item \textbf{Treatment gap:} 85--90\%.
+    \item \textbf{Psychiatrists per 100,000:} $\sim$0.3--0.75 (vs. 3.0 WHO recommendation).
+    \item \textbf{Therapy Cost:} $\sim$₹500--₹3000 per session.
+\end{itemize}
+
+\subsection{Write the Problem Statement (Preliminary)}
+Approximately 38 million Indians suffer from anxiety disorders, yet 85--90\% remain untreated due to a critical shortage of mental health professionals, high therapy costs, social stigma, and the absence of real-time adaptive intervention systems. Current therapy is episodic, non-responsive to real-time physiological states, and disconnected between sessions---leading to poor adherence, delayed intervention, and a compounding feedback loop where untreated anxiety worsens over time.
+
+\textbf{Root Cause:} The absence of affordable, scalable, real-time adaptive therapy delivery systems.
+
+\subsection{Define the System}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Component} & \textbf{Function} \\
+\midrule
+Anxiety Patient & End-user experiencing symptoms, seeking therapy. \\
+Biometric Sensor & MAX30102 + ESP32 measuring real-time SpO2 and pulse. \\
+VR Headset & Meta Quest 3 delivering immersive environments. \\
+Unity VR App & Renders adaptive scenes responding to biometrics. \\
+Spring Boot Backend & Central hub routing data and AI responses. \\
+Local AI Model & Ollama generating personalized therapy guidance. \\
+React Dashboard & Displays live data, session history, and analytics. \\
+Clinician & Monitors data via dashboard, adjusts treatments. \\
+\bottomrule
+\end{tabularx}
+\caption{System Components}
+\end{table}
+
+\newpage
+\subsubsection{System Map Diagram}
+\begin{center}
+\begin{tikzpicture}[
+    node distance=2cm and 2cm,
+    box/.style={rectangle, draw=blue!60, fill=blue!5, thick, minimum width=2.5cm, minimum height=1.5cm, align=center, rounded corners},
+    arrow/.style={thick, ->, >=stealth}
+]
+
+% Nodes
+\node[box] (sensor) {MAX30102\\Sensor};
+\node[box, right=of sensor] (esp) {ESP32\\MCU};
+\node[box, right=of esp] (backend) {Spring Boot\\Backend};
+\node[box, below=of backend] (ai) {Local AI\\(Ollama)};
+\node[box, above=of backend] (react) {React\\Dashboard};
+\node[box, right=of backend] (unity) {Unity VR\\App};
+\node[box, right=of react] (clinician) {Clinician};
+\node[box, right=of sensor, below=4cm] (patient) {Anxiety\\Patient};
+\node[box, below=of esp] (db) {Session\\Database};
+
+% Connections
+\draw[arrow] (sensor) -- node[above, font=\footnotesize] {I2C} (esp);
+\draw[arrow] (esp) -- node[above, font=\footnotesize] {MQTT} (backend);
+\draw[arrow] (backend) -- node[right, font=\footnotesize] {HTTP} (ai);
+\draw[arrow] (ai) -- (backend);
+\draw[arrow] (backend) -- node[right, font=\footnotesize] {REST/WS} (react);
+\draw[arrow] (backend) -- node[above, font=\footnotesize] {WebSocket} (unity);
+\draw[arrow] (unity) -- (backend);
+\draw[arrow] (react) -- node[above, font=\footnotesize] {View} (clinician);
+\draw[arrow] (patient) -| node[left, font=\footnotesize] {Wears} (sensor);
+\draw[arrow] (unity) |- node[right, font=\footnotesize] {Adaptive Scenes} (patient);
+\draw[arrow] (backend) -- node[left, font=\footnotesize] {JDBC} (db);
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Define the System Boundary (Scope)}
+\begin{center}
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=blue!60, fill=blue!5, thick, minimum width=2cm, minimum height=1cm, align=center, rounded corners},
+    env/.style={rectangle, draw=gray, fill=gray!10, thick, minimum width=2cm, minimum height=1cm, align=center, rounded corners},
+    arrow/.style={thick, ->, >=stealth},
+    input/.style={thick, ->, >=stealth, color=green!70!black},
+    output/.style={thick, ->, >=stealth, color=red!80!black}
+]
+
+% System boundary
+\node[draw, dashed, thick, color=blue, inner sep=1cm, fill=blue!2] (system) {
+    \begin{tikzpicture}
+        \node[box] (hw) {Hardware (ESP32+Sensor)};
+        \node[box, right=1.5cm of hw] (sw) {Software (Spring/VR/AI)};
+        \draw[arrow] (hw) -- (sw);
+    \end{tikzpicture}
+};
+\node[above, text=blue, font=\bfseries] at (system.north) {SYSTEM BOUNDARY};
+
+% Environment inputs
+\node[env, left=2cm of system, yshift=1cm] (physio) {Patient Physiology};
+\node[env, left=2cm of system, yshift=-1cm] (aiweights) {AI Weights};
+
+% Environment outputs
+\node[env, right=2cm of system, yshift=1cm] (health) {Reduced Anxiety};
+\node[env, right=2cm of system, yshift=-1cm] (heat) {Hardware Heat};
+
+% Arrows
+\draw[input] (physio) -- node[above, font=\footnotesize] {Data In} (system.west |- physio);
+\draw[input] (aiweights) -- node[above, font=\footnotesize] {Models In} (system.west |- aiweights);
+\draw[output] (system.east |- health) -- node[above, font=\footnotesize] {Desirable} (health);
+\draw[output] (system.east |- heat) -- node[above, font=\footnotesize] {Waste} (heat);
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Stakeholder Map}
+\begin{enumerate}
+    \item \textbf{Anxiety Patients:} Need affordable, accessible tools with real-time biofeedback and privacy.
+    \item \textbf{Clinicians / Therapists:} Need real-time dashboards to monitor patient biometrics and historical trends.
+    \item \textbf{Healthcare Institutions:} Need scalable, cost-effective alternatives to fully in-person therapy.
+    \item \textbf{Caregivers:} Need visibility into patient's therapy progress (with consent).
+\end{enumerate}
+
+\subsection{State "How Might We\dots"}
+\begin{enumerate}
+    \item How might we move from a therapy system requiring physical visits to scarce professionals to a system delivering accessible, VR-based anxiety therapy at home using real-time biometric feedback?
+    \item How might we move from static therapy protocols to a system where a local AI model dynamically personalizes therapeutic guidance based on live SpO2 and pulse data?
+    \item How might we move from disconnected, episodic therapy to a system that continuously tracks biometric trends and provides clinicians with live dashboards?
+\end{enumerate}
+
+\newpage
+\section{Module 2: Systems Mapping \& Root Cause}
+
+\subsection{Identify Events \& Patterns}
+\textbf{Events (Tip of Iceberg):} Patients wait 2--8 weeks for appointments; high therapy dropout after 3--5 sessions; no biometric data in therapy; rising anxiety prevalence.
+
+\textbf{Patterns (Below surface):} Consistent year-over-year widening of demand-supply gap; recurring patient dropout cycle every 1--3 months; daily anxiety triggers misaligned with weekly therapy timing.
+
+\subsection{Process Flow Mapping} \label{sec:process_flow}
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    box/.style={rectangle, draw=black, fill=gray!10, thick, minimum width=4cm, minimum height=1cm, align=center, rounded corners},
+    arrow/.style={thick, ->, >=stealth}
+]
+
+\node[box] (symptom) {Patient Experiences Anxiety};
+\node[box, below=of symptom] (denial) {Self-Assessment / Denial (weeks)};
+\node[box, below=of denial] (seek) {Finds Professional (Waits 2-8 weeks)};
+\node[box, below=of seek] (session) {In-person Session (No biofeedback)};
+\node[box, below=of session] (home) {Returns Home (No monitoring)};
+\node[box, below=of home] (dropout) {Symptom Recurrence $\rightarrow$ Dropout};
+
+\draw[arrow] (symptom) -- (denial);
+\draw[arrow] (denial) -- (seek);
+\draw[arrow] (seek) -- (session);
+\draw[arrow] (session) -- (home);
+\draw[arrow] (home) -- (dropout);
+\draw[arrow] (dropout.west) -- ++(-1.5,0) |- (symptom.west);
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Identify the System Structure}
+\begin{itemize}
+    \item \textbf{Physical limits:} Only $\sim$0.3 psychiatrists per 100,000 population.
+    \item \textbf{Process limits:} Therapy requires physical co-presence and fixed schedules.
+    \item \textbf{Data limits:} No sensor integration in current clinical workflows.
+\end{itemize}
+
+\subsection{Explore Mental Models}
+\begin{itemize}
+    \item \textbf{Patients:} "If I don't feel better quickly, therapy doesn't work."
+    \item \textbf{Clinicians:} "I can only assess what the patient tells me verbally."
+    \item \textbf{Institutions:} "Scaling mental health requires hiring more doctors."
+\end{itemize}
+
+\subsection{Bottlenecks Identified}
+\textbf{Data Bottleneck:} No real-time physiological data flows from patient to clinician.\\
+\textbf{Process Bottleneck:} Therapy delivery requires physical co-presence.\\
+\textbf{Human Bottleneck:} Critical shortage of professionals acts as a hard capacity limit.
+
+\newpage
+\section{Module 3: Causal Loop Diagrams \& Leverage}
+
+\subsection{Identifying Feedback Loops}
+\begin{center}
+\begin{tikzpicture}[
+    var/.style={align=center, font=\bfseries},
+    arrow/.style={thick, ->, >=stealth}
+]
+
+% Center Node
+\node[var] (untreated) at (0,0) {Untreated\\Anxiety};
+
+% R1 Nodes (Right side)
+\node[var] (severity) at (3.5,2) {Severity of\\Condition};
+\node[var] (dropout) at (3.5,-2) {Dropout Rate /\\Wait Times};
+
+% B1 Nodes (Left side)
+\node[var] (vr) at (-3.5,2) {AI/VR Therapy\\Usage};
+\node[var] (outcomes) at (-3.5,-2) {Treatment\\Outcomes};
+
+% Reinforcing Loop R1 (Counter-Clockwise)
+\draw[arrow, bend left=20] (untreated) to node[above left, font=\footnotesize] {+} (severity);
+\draw[arrow, bend left=20] (severity) to node[right, font=\footnotesize] {+} (dropout);
+\draw[arrow, bend left=20] (dropout) to node[below left, font=\footnotesize] {+} (untreated);
+\node[color=red, font=\bfseries\large] at (2.2,0) {R1};
+
+% Balancing Loop B1 (Clockwise)
+\draw[arrow, bend right=20] (untreated) to node[above right, font=\footnotesize] {+} (vr);
+\draw[arrow, bend right=20] (vr) to node[left, font=\footnotesize] {+} (outcomes);
+\draw[arrow, bend right=20] (outcomes) to node[below right, font=\footnotesize] {-} (untreated);
+\node[color=green!70!black, font=\bfseries\large] at (-2.2,0) {B1};
+
+% Leverage Point
+\node[star, star points=5, star point ratio=2.25, draw, fill=yellow, minimum size=0.8cm, inner sep=0pt] at ($(vr.north east) + (-0.2, -0.2)$) {};
+\node[above=0.3cm of vr, font=\footnotesize\bfseries, color=blue] {LEVERAGE POINT};
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Leverage Points}
+The primary leverage point is the introduction of \textbf{AI/VR Biofeedback Therapy}. 
+Currently, the system is dominated by the \textbf{R1 (Reinforcing) vicious cycle}, where untreated anxiety worsens, leading to higher wait times and dropout rates, further increasing untreated anxiety. 
+By introducing an automated, at-home therapy system, we strengthen the \textbf{B1 (Balancing) loop}. The leverage point acts directly to provide immediate relief and physiological tracking, breaking the dependency on the overloaded human clinician supply.
+
+\subsection{Matching the System Archetype}
+\textbf{Archetype Selected:} \textit{Limits to Growth}\\
+\textbf{Why it fits:} The "engine of growth" is the increasing societal awareness of mental health, driving more patients to seek therapy. However, the "limit to success" is the hard physical capacity constraint: India has only 0.3 psychiatrists per 100,000 people. As demand grows, the limited capacity causes wait times to skyrocket and the quality of care to drop, ultimately halting the positive trend and driving patients to drop out (the balancing counter-reaction). 
+Serenity VR bypasses this physical limit by using technology to scale therapy delivery.
+
+\end{document}

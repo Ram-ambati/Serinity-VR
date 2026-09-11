@@ -1,0 +1,335 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, fit, backgrounds, calc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\title{\textbf{Problem Solving in Engineering (IP-3)}\\\Large Module 1 Workbook: Serenity VR}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Select a Super System}
+\textbf{Healthcare and Mental Wellness System}
+
+\section*{Select a Specific Sub System (Problem Area)}
+\begin{itemize}
+    \item \textbf{Sub System:} Anxiety Disorder Management and Therapy Delivery System
+    \item \textbf{Specific Location:} Urban India (Hyderabad / Metropolitan cities)
+    \item \textbf{Specific Issue:} Inaccessible, non-adaptive, and delayed anxiety treatment
+    \item \textbf{Specific Focus:} Patients with anxiety disorders who lack access to timely, personalized, biofeedback-driven therapy
+\end{itemize}
+
+\section*{Problem Area}
+India has approximately 38 million people living with anxiety disorders, yet 85--90\% do not receive adequate treatment due to a severe shortage of mental health professionals (only $\sim$0.3 psychiatrists per 100,000 population vs. the WHO-recommended 3 per 100,000). Existing therapy methods are expensive, require frequent in-person clinic visits, offer no real-time physiological feedback, and cannot dynamically adapt to a patient's momentary stress levels. This results in delayed intervention, poor treatment adherence, and compounding anxiety - particularly among urban youth and working professionals who face high-stress environments but lack affordable, technology-driven support systems.
+
+\section*{Study the System (PID - 5W2H Framework)}
+
+\subsection*{WHAT is/are the SYMPTOM(s) (Effect) of the problem observed?}
+\begin{enumerate}
+    \item \textbf{Massive treatment gap:} 85--90\% of individuals with mental health conditions in India do not receive the care they need [Source: Mental Health Foundation of India (mhfaindia.com); PIB, Govt. of India].
+    \item \textbf{Rising anxiety prevalence:} Anxiety disorders in India have increased by over 120\% between 1990 and 2023 [Source: Centre for Mental Health Law and Policy (CMHLP); Global Burden of Disease Study].
+    \item \textbf{Non-adaptive therapy:} Current treatment protocols (CBT, medication) follow fixed schedules and do not adapt in real-time to a patient's physiological state during sessions.
+    \item \textbf{Post-pandemic surge:} COVID-19 caused a marked rise in anxiety and depression in both primary care and general population settings across India [Source: National Medical Journal of India (NMJI)].
+    \item \textbf{High dropout rates:} Patients discontinue therapy due to cost, travel burden, stigma, and lack of perceivable real-time progress.
+\end{enumerate}
+
+\subsection*{WHO is affected most by the problem? (Stakeholder Group 1)}
+\begin{enumerate}
+    \item \textbf{Patients with anxiety disorders} - Particularly urban youth (18--35), college students, and working professionals who face academic pressure, workplace stress, and social media-driven anxiety.
+    \item \textbf{Women and adolescents} - Identified as groups experiencing a disproportionately higher burden of anxiety and depressive disorders [Source: CMHLP].
+    \item \textbf{Patients in rural/semi-urban areas} - Over 60\% of India's population resides in rural areas where mental health professionals are virtually absent [Source: psychology.town; lyfsmile.com].
+\end{enumerate}
+
+\subsection*{WHO is Causing the Problem? (Stakeholder Group 2)}
+\begin{enumerate}
+    \item \textbf{Systemic shortage of mental health professionals} - India has $\sim$0.3--0.75 psychiatrists per 100,000 population against the WHO recommendation of 3 per 100,000 [Source: PIB, Govt. of India; mentis.co.in].
+    \item \textbf{Healthcare policy gaps} - Insufficient funding and infrastructure for mental health under the National Mental Health Programme.
+    \item \textbf{Social stigma} - Cultural attitudes that discourage seeking mental health treatment, leading to delayed diagnosis and care.
+    \item \textbf{Technology gap in therapy delivery} - Absence of affordable, technology-assisted, real-time adaptive therapy systems.
+\end{enumerate}
+
+\subsection*{WHEN (Time patterns) is the Symptom happening?}
+\begin{itemize}
+    \item \textbf{Chronic and ongoing} - Anxiety disorders are persistent conditions that worsen without intervention.
+    \item \textbf{Peak during high-stress periods} - Exam seasons (March--May), work deadlines, and financial year transitions.
+    \item \textbf{Post-pandemic acceleration} - Significant worsening since 2020, with no sign of reversal.
+    \item \textbf{Daily triggers} - Morning commutes, workplace hours (9 AM -- 7 PM), and late-night screen time are common trigger periods.
+    \item \textbf{When symptoms are NOT occurring} - During restful sleep, vacation periods, or when patients are actively engaged in therapeutic activities (meditation, exercise, nature exposure).
+\end{itemize}
+
+\subsection*{WHERE (Space context) is/are the symptoms observed?}
+\begin{itemize}
+    \item \textbf{Urban metropolitan areas} - Hyderabad, Bangalore, Delhi, Mumbai - where high-stress lifestyles are prevalent.
+    \item \textbf{Educational institutions} - Engineering colleges, medical schools, competitive exam coaching centres.
+    \item \textbf{Workplaces} - IT corridors, startup ecosystems, BPO/call centres.
+    \item \textbf{NOT prominently observed} - In communities with strong social support networks, active wellness programs, or access to regular counselling.
+\end{itemize}
+
+\subsection*{HOW is the process cycle observed?}
+\textbf{Current Therapy Delivery Process Flow:}
+\begin{verbatim}
+Patient Experiences Anxiety Symptoms
+        |
+        v
+Self-Assessment / Denial Phase (weeks-months)
+        |
+        v
+Seeks Help -> Faces Stigma / Awareness Gap
+        |
+        v
+Finds Psychiatrist/Psychologist (long wait times: 2-8 weeks)
+        |
+        v
+In-person Session (30-60 min, Rs.500-Rs.3000/session)
+        |
+        v
+Fixed Protocol Therapy (CBT / Medication) - NO real-time biofeedback
+        |
+        v
+Patient Returns Home -> No Monitoring Between Sessions
+        |
+        v
+Symptom Recurrence -> Missed Follow-ups -> Treatment Dropout
+        |
+        v
+Cycle Repeats / Condition Worsens
+\end{verbatim}
+\textbf{Key Observation:} The current system is \textit{reactive} (wait for crisis), \textit{non-adaptive} (same protocol regardless of real-time state), and \textit{disconnected} (no data between sessions).
+
+\subsection*{HOW MUCH is the impact?}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{lXl}
+\toprule
+\textbf{Metric} & \textbf{Data} & \textbf{Source} \\
+\midrule
+People with anxiety disorders in India & $\sim$38 million & Mental Health Foundation of India \\
+Treatment gap & 85--90\% do not receive care & PIB, Govt. of India \\
+Increase in anxiety disorders (1990-2023) & Over 120\% & CMHLP / Global Burden of Disease \\
+Psychiatrists per 100,000 population & $\sim$0.3--0.75 (India) vs. 3.0 (WHO) & PIB; WHO \\
+Clinical psychologists per 100,000 & $\sim$0.07 & lyfsmile.com; psychology.town \\
+Average therapy cost per session & Rs.500--Rs.3000 & Market data, urban India \\
+Population in India with mental health disorder & $\sim$11 in 100 (over 150 million) & PIB, Govt. of India \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{Write the Problem Statement (Preliminary)}
+Approximately 38 million Indians suffer from anxiety disorders, yet 85--90\% remain untreated due to a critical shortage of mental health professionals ($\sim$0.3 psychiatrists per 100,000 vs. WHO's recommended 3 per 100,000), high therapy costs, social stigma, and the absence of real-time adaptive intervention systems. Current therapy is episodic, non-responsive to real-time physiological states, and disconnected between sessions - leading to poor adherence, delayed intervention, and a compounding feedback loop where untreated anxiety worsens over time, further discouraging patients from seeking help.
+
+\textbf{Are these problems related to each other?}\\
+Yes - the shortage of professionals drives up costs and wait times $\rightarrow$ patients delay seeking help $\rightarrow$ anxiety compounds $\rightarrow$ when they finally seek help, the condition is more severe $\rightarrow$ fixed-protocol therapy is less effective for severe cases $\rightarrow$ patients drop out $\rightarrow$ the treatment gap widens further.
+
+\textbf{What is the Causal relationship?}\\
+Professional shortage $\rightarrow$ high cost and wait times $\rightarrow$ delayed treatment $\rightarrow$ worsened condition $\rightarrow$ poor therapy outcomes $\rightarrow$ dropout $\rightarrow$ untreated population grows $\rightarrow$ increased demand on already insufficient supply.
+
+\textbf{Which one problem is the root cause?}\\
+The \textbf{absence of affordable, scalable, real-time adaptive therapy delivery systems} is the core enabler of the vicious cycle. While the professional shortage is structural, a technology-assisted therapy system can bridge the gap by providing accessible, biofeedback-driven, AI-personalized anxiety management.
+
+\textbf{Is there a feedback loop?}\\
+Yes - a reinforcing (vicious) loop:\\
+Untreated anxiety $\rightarrow$ Increased Severity $\rightarrow$ Higher Cost of treatment $\rightarrow$ Increased Patient avoidance $\rightarrow$ Larger Untreated population $\rightarrow$ Higher Demand on limited professionals $\rightarrow$ Longer Wait times $\rightarrow$ More Untreated anxiety (loop continues).
+
+\section*{Define the System}
+
+\subsection*{System Components (defined by function)}
+\begin{enumerate}
+    \item \textbf{Anxiety Patient:} The end-user experiencing anxiety symptoms, seeking therapy
+    \item \textbf{Biometric Sensor (MAX30102 + ESP32):} Measures real-time SpO2 and pulse rate of the patient
+    \item \textbf{VR Headset (Meta Quest 3):} Delivers immersive therapeutic environments (guided breathing, nature scenes)
+    \item \textbf{Unity VR Application:} Renders adaptive VR scenes that respond to biometric data
+    \item \textbf{Spring Boot Backend:} Central hub - routes biometric data, AI responses, and session data
+    \item \textbf{Local AI Model (Ollama - Llama 3 8B):} Generates personalized therapy guidance based on biometric trends
+    \item \textbf{React Dashboard:} Displays live biometric data, session history, and analytics
+    \item \textbf{Clinician / Therapist:} Monitors patient data via dashboard, adjusts treatment parameters
+    \item \textbf{MQTT / WebSocket Protocol:} Real-time data transport layer connecting all components
+    \item \textbf{Session Database:} Stores historical biometric data, session logs, and patient progress
+\end{enumerate}
+
+\subsection*{System Map}
+\begin{center}
+\begin{tikzpicture}[
+    node distance=2cm and 2cm,
+    box/.style={rectangle, draw=blue!60, fill=blue!5, thick, minimum width=2.5cm, minimum height=1.5cm, align=center, rounded corners},
+    arrow/.style={thick, ->, >=stealth}
+]
+
+% Nodes
+\node[box] (sensor) {MAX30102\\Sensor};
+\node[box, right=of sensor] (esp) {ESP32\\MCU};
+\node[box, right=of esp] (backend) {Spring Boot\\Backend};
+\node[box, below=of backend] (ai) {Local AI\\(Ollama)};
+\node[box, above=of backend] (react) {React\\Dashboard};
+\node[box, right=of backend] (unity) {Unity VR\\App};
+\node[box, right=of react] (clinician) {Clinician};
+\node[box, right=of sensor, below=4cm] (patient) {Anxiety\\Patient};
+\node[box, below=of esp] (db) {Session\\Database};
+
+% Connections
+\draw[arrow] (sensor) -- node[above, font=\footnotesize] {I2C} (esp);
+\draw[arrow] (esp) -- node[above, font=\footnotesize] {MQTT} (backend);
+\draw[arrow] (backend) -- node[right, font=\footnotesize] {HTTP} (ai);
+\draw[arrow] (ai) -- (backend);
+\draw[arrow] (backend) -- node[right, font=\footnotesize] {REST/WS} (react);
+\draw[arrow] (backend) -- node[above, font=\footnotesize] {WebSocket} (unity);
+\draw[arrow] (unity) -- (backend);
+\draw[arrow] (react) -- node[above, font=\footnotesize] {View} (clinician);
+\draw[arrow] (patient) -| node[left, font=\footnotesize] {Wears} (sensor);
+\draw[arrow] (unity) |- node[right, font=\footnotesize] {Adaptive Scenes} (patient);
+\draw[arrow] (backend) -- node[left, font=\footnotesize] {JDBC} (db);
+
+\end{tikzpicture}
+\end{center}
+
+\section*{Define the System Boundary (Scope)}
+
+\textbf{What is INSIDE the system boundary (scope of study):}
+\begin{itemize}
+    \item Biometric sensor hardware (MAX30102 + ESP32)
+    \item VR headset and Unity application
+    \item Spring Boot backend server
+    \item Local AI inference container (Ollama)
+    \item React monitoring dashboard
+    \item Real-time data pipeline (MQTT/WebSocket)
+    \item Session data storage
+\end{itemize}
+
+\textbf{What is OUTSIDE the system boundary (environment):}
+\begin{itemize}
+    \item Pharmaceutical treatment / medication
+    \item In-person clinical therapy sessions
+    \item Hospital/clinic infrastructure
+    \item Health insurance systems
+    \item Government mental health policy
+    \item Patient's social/family support system
+    \item Internet Service Provider / Network infrastructure
+\end{itemize}
+
+\textbf{Inputs (from environment INTO the system):}
+\begin{itemize}
+    \item Patient's physiological signals (heartbeat, SpO2) [GREEN ARROW]
+    \item Patient's willingness to engage with VR therapy [GREEN ARROW]
+    \item Clinician's treatment parameters and preferences [GREEN ARROW]
+    \item Pre-trained AI model weights (Llama 3) [GREEN ARROW]
+    \item Power supply and network connectivity [GREEN ARROW]
+\end{itemize}
+
+\textbf{Outputs (from the system TO the environment):}
+\begin{itemize}
+    \item \textbf{Desirable:} Reduced anxiety levels, improved patient self-awareness, therapy session reports for clinicians, historical trend data [RED ARROW]
+    \item \textbf{Undesirable (waste):} Heat generation from GPU/hardware, potential sensor inaccuracy/noise, VR-induced motion sickness risk, data privacy concerns [RED ARROW]
+\end{itemize}
+
+\subsection*{System Boundary Diagram}
+\begin{center}
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=blue!60, fill=blue!5, thick, minimum width=2cm, minimum height=1cm, align=center, rounded corners},
+    env/.style={rectangle, draw=gray, fill=gray!10, thick, minimum width=2cm, minimum height=1cm, align=center, rounded corners},
+    arrow/.style={thick, ->, >=stealth},
+    input/.style={thick, ->, >=stealth, color=green!70!black},
+    output/.style={thick, ->, >=stealth, color=red!80!black}
+]
+
+% System boundary
+\node[draw, dashed, thick, color=blue, inner sep=1cm, fill=blue!2] (system) {
+    \begin{tikzpicture}
+        \node[box] (hw) {Hardware (ESP32+Sensor)};
+        \node[box, right=1.5cm of hw] (sw) {Software (Spring/VR/AI)};
+        \draw[arrow] (hw) -- (sw);
+    \end{tikzpicture}
+};
+\node[above, text=blue, font=\bfseries] at (system.north) {SYSTEM BOUNDARY};
+
+% Environment inputs
+\node[env, left=2cm of system, yshift=1cm] (physio) {Patient Physiology};
+\node[env, left=2cm of system, yshift=-1cm] (aiweights) {AI Weights};
+
+% Environment outputs
+\node[env, right=2cm of system, yshift=1cm] (health) {Reduced Anxiety};
+\node[env, right=2cm of system, yshift=-1cm] (heat) {Hardware Heat};
+
+% Arrows
+\draw[input] (physio) -- node[above, font=\footnotesize] {Data In} (system.west |- physio);
+\draw[input] (aiweights) -- node[above, font=\footnotesize] {Models In} (system.west |- aiweights);
+\draw[output] (system.east |- health) -- node[above, font=\footnotesize] {Desirable} (health);
+\draw[output] (system.east |- heat) -- node[above, font=\footnotesize] {Waste} (heat);
+
+\end{tikzpicture}
+\end{center}
+
+\section*{Stakeholder Map}
+\subsection*{1. Stakeholder: Anxiety Patients (End Users)}
+\textbf{Needs:}
+\begin{itemize}
+    \item Affordable, accessible anxiety management tool that does not require frequent clinic visits
+    \item Real-time feedback on their physiological state during therapy (biofeedback)
+    \item Immersive, calming VR environments that adapt to their stress levels
+    \item Privacy and data security for sensitive health information
+    \item Ability to track progress over time through session history
+\end{itemize}
+
+\subsection*{2. Stakeholder: Clinicians / Therapists}
+\textbf{Needs:}
+\begin{itemize}
+    \item Real-time dashboard to monitor patient biometrics (SpO2, pulse) during and between sessions
+    \item Historical session data and trends to inform treatment decisions
+    \item Ability to customize VR therapy parameters (scene type, breathing pace, session duration)
+    \item Alerts for abnormal biometric readings
+    \item Integration with existing clinical workflows
+\end{itemize}
+
+\subsection*{3. Stakeholder: Healthcare Institutions / Hospitals}
+\textbf{Needs:}
+\begin{itemize}
+    \item Scalable solution that extends their mental health service capacity without proportional increase in staff
+    \item Cost-effective alternative to fully in-person therapy delivery
+    \item Evidence-based outcomes data to justify investment
+    \item Compliance with data privacy standards (e.g., IT Act 2000, upcoming DPDP Act)
+    \item Interoperability with existing Electronic Health Record (EHR) systems
+\end{itemize}
+
+\subsection*{4. Stakeholder (Additional): Caregivers / Family Members}
+\textbf{Needs:}
+\begin{itemize}
+    \item Visibility into patient's therapy progress (with patient consent)
+    \item Assurance that the system is safe and medically guided
+    \item Simple, non-technical interface for understanding patient status
+\end{itemize}
+
+\section*{Quantitative Baseline Data}
+
+\subsection*{1. Data Point A:}
+\textbf{Approximately 38 million people in India live with anxiety disorders, and the prevalence has increased by over 120\% between 1990 and 2023.} Despite this, 85--90\% of individuals with mental health conditions do not receive adequate treatment, constituting one of the largest treatment gaps globally.\\
+\textbf{Source:} Centre for Mental Health Law and Policy (CMHLP), Global Burden of Disease Study; Mental Health Foundation of India (mhfaindia.com); Press Information Bureau (PIB), Government of India.
+
+\subsection*{2. Data Point B:}
+\textbf{India has only $\sim$0.3--0.75 psychiatrists per 100,000 population and $\sim$0.07 clinical psychologists per 100,000 population}, compared to the WHO recommendation of at least 3 psychiatrists per 100,000. This means India would need approximately \textbf{42,000+ psychiatrists} to meet the WHO standard, but currently has fewer than \textbf{10,000}.\\
+\textbf{Source:} Press Information Bureau (PIB), Government of India; WHO Mental Health Atlas; mentis.co.in; psychology.town.
+
+\subsection*{3. Data Point C (Additional):}
+\textbf{Meta-analyses show that VR-based exposure therapy (VRET) is as efficacious as traditional in-vivo exposure therapy} for anxiety disorders, with significant reductions in self-reported anxiety and physiological markers (heart rate, HRV). VR-based biofeedback systems have demonstrated measurable improvements in heart rate variability and subjective anxiety scores.\\
+\textbf{Source:} Frontiers in Psychology (frontiersin.org); National Institutes of Health (NIH) - PubMed Central; Journal of Medical Internet Research (JMIR).
+
+\section*{State "How Might We..."}
+
+\subsection*{1. How Might We}
+How might we move from a \textbf{therapy system that requires patients to physically visit scarce mental health professionals} on fixed schedules to a system that \textbf{delivers accessible, VR-based anxiety therapy at home}, using real-time biometric feedback to adapt the therapeutic experience to the patient's momentary physiological state?
+
+\subsection*{2. How Might We}
+How might we move from \textbf{static, one-size-fits-all therapy protocols} that do not account for real-time patient physiology to a system where \textbf{a local AI model dynamically personalizes therapeutic guidance} (breathing exercises, scene selection, pacing) based on live SpO2 and pulse data from wearable sensors?
+
+\subsection*{3. How Might We}
+How might we move from \textbf{disconnected, episodic therapy with no data continuity between sessions} to a system that \textbf{continuously tracks biometric trends, provides clinicians with live dashboards and historical analytics}, and enables data-driven treatment decisions - thereby improving treatment adherence and reducing the 85--90\% treatment gap?
+
+\end{document}
