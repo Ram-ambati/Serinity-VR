@@ -24,6 +24,3 @@ This repository is a monorepo containing all components of the Serenity VR syste
 3. The backend consults a local Llama 3 AI model for real-time therapeutic adaptations.
 4. The backend streams adaptive commands via WebSocket to the Unity VR headset.
 5. Clinicians can monitor the session live via the React dashboard.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
