@@ -47,6 +47,3 @@ build/
 .idea/
 *.DS_Store
 Thumbs.db
-
-# Documentation
-Docs/
